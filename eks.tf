@@ -8,7 +8,7 @@ terraform {
 
 
 resource "aws_eks_cluster" "cluster1" {
-  name     = "example"
+  name     = "jameseks"
   role_arn = "${aws_iam_role.terraform-cluster.arn}"
 
   vpc_config {

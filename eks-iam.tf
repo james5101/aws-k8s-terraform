@@ -1,10 +1,4 @@
-terraform {
-    backend "s3" {
-        bucket = "terraform-state-lab10"
-        key = "workspace/iam/iam"
-        region = "us-east-1"
-    }
-}
+
 
 resource "aws_iam_role" "terraform-cluster" {
   name = "terraform-eks-demo-cluster"
